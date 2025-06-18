@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+nav a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.vehicle-section .filter {
+    margin-bottom: 20px;
+}
+
+.vehicle-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.vehicle {
+    background-color: #e3e3e3;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 90%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.vehicle h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+.contact-section {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section input, .contact-section textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-section button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .vehicle {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .vehicle {
+        width: 100%;
+    }
+}
+#grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+}

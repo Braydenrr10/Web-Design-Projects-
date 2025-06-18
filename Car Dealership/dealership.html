@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership</title>
+    <link rel="stylesheet" href="dealership.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Car Dealership</h1>
+        <nav>
+            <a href="#vehicles">Vehicles</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+
+    <section id="vehicles" class="vehicle-section">
+        <h2>Available Vehicles</h2>
+        <div class="filter">
+            <label for="car-type">Filter by Type: </label>
+            <select id="car-type">
+                <option value="all">All</option>
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="truck">Truck</option>
+            </select>
+
+            <label for="car-make">Make:</label>
+            <select id="car-make">
+                <option value="all">All</option>
+                <option value="Jeep">Jeep</option>
+                <option value="Honda">Honda</option>
+                <option value="Toyota">Toyota</option>
+                <option value="GMC">GMC</option>
+                <option value="Ford">Ford</option>
+                <option value="BMW">BMW</option>
+                <option value="Dodge">Dodge</option>
+                <option value="Nissan">Nissan</option>
+            </select>
+            
+            <label for="car-year">Year:</label>
+            <select id="car-year">
+                <option value="All">All</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+            </select>
+
+            
+        </div>
+        
+        <div class="vehicle-list">
+            <div class="vehicle" data-type="suv" car-make="Jeep" car-year="2025">
+                <img src="images/car1.jpg" alt="Grand Cherokee">
+                <h3>Grand Cherokee SRT</h3>
+                <p>$55,000</p>
+                <button onclick="contactDealer('Grand Cherokee')">Contact Dealer</button>
+            </div>
+            <div class="vehicle" data-type="suv" car-make="Dodge" car-year="2023">
+                <img src="images/durangor:t.jpg" alt="Durango">
+                <h3>Durango R/T</h3>
+                <p>$75,000</p>
+                <button onclick="contactDealer('Durango R/T')">Contact Dealer</button>
+            </div>
+            <div class="vehicle" data-type="suv" car-make="Nissan">
+                <img src="images/nissasrogue.jpeg" alt="Nissan Rogue">
+                <h3>Nissan Rogue</h3>
+                <p>$38,000</p>
+                <button onclick="contactDealer('Nissan Rogue')">Contact Dealer</button>
+            </div> 
+            <div class="vehicle" data-type="sedan" car-make="BMW">
+                <img src="images/minicoop.jpg" alt="Mini Coop">
+                <h4>Mini Coop</h4>
+                <p>$25,000</p>
+                <button onclick="contactDealer('Mini Coop')">Contact Dealer</button>
+            </div>
+            <div class="vehicle" data-type="sedan" car-make="Honda">
+                <img src="images/hondaaccord.jpg" alt="Honda Accord">
+                <h5>Honda Accord</h5>
+                <p>$32,000</p>
+                <button onclick="contactDealer('Honda Accord')">Contact Dealer</button>
+            </div>
+            <div class="vehicle" data-type="sedan" car-make="Toyota">
+                <img src="images/toyotacamry.jpg" alt="Toyota Camry">
+                <h5>Toyota Camry</h5>
+                <p>$30,000</p>
+                <button onclick="contactDealer('Toyota Camry')">Contact Dealer</button>
+            </div>
+            <div class="vehicle" data-type="truck" car-make="Ford">
+                <img src="images/F-150.jpeg" alt="Ford F-150">
+                <h5>Ford F-150</h5>
+                <p>$80,000</p>
+                <button onclick="contactDealer('Ford F-150')">Contact Dealer</button>
+            </div>
+            <div class="vehicle" data-type="truck" car-make="Toyota">
+                <img src="images/ToyotaTacoma.jpeg" alt="Toyota Tacoma">
+                <h5>Toyota Tacoma</h5>
+                <p>$80,000</p>
+                <button onclick="contactDealer('Toyota Tacoma')">Contact Dealer</button>
+            </div>
+            <div class="vehicle" data-type="truck" car-make="GMC">
+                <img src="images/GMCSierra.jpg" alt="GMC Sierra">
+                <h5>GMC Sierra</h5>
+                <p>$30,000</p>
+                <button onclick="contactDealer('GMC Sierra')">Contact Dealer</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Car Dealership. All rights reserved.</p>
+    </footer>
+
+    <script src="dealer.js"></script>
+</body>
+</html>
